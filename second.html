@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAINT - TRNCHKDS</title>
+  <link rel="icon" type="image/png" href="black.png" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('black.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      color: white;
+      animation: fadeIn 1s ease;
+    }
+
+    
+
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: white;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes staggerFadeIn {
+      from { opacity: 0; transform: translateX(-10px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .chrome-text {
+      font-weight: bold;
+      color: #e0e0e0;
+      text-shadow:
+        0 0 5px #fff,
+        0 0 10px #ccc,
+        0 0 15px #aaa,
+        0 0 20px #888;
+      text-align: center;
+      margin: 20px 0;
+      animation: fadeIn 1s ease 0.2s backwards;
+      transition: transform 0.3s ease;
+    }
+
+    .chrome-text:hover {
+      transform: scale(1.05);
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 10px 20px;
+      gap: 20px;
+      animation: fadeIn 1s ease 0.4s backwards;
+    }
+
+    .sidebar, .duchess-section {
+      flex: 1 1 300px;
+      max-height: 50vh;
+      overflow-y: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 1s ease 0.6s backwards;
+    }
+
+    .sidebar:hover, .saint-section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+    }
+
+    h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 5px;
+      font-size: 14px;
+      opacity: 0;
+      animation: staggerFadeIn 0.4s ease forwards;
+    }
+
+    li:nth-child(n) {
+      animation-delay: calc(var(--i, 1) * 0.03s);
+    }
+
+    li:hover {
+      color: #0ff;
+      transform: translateX(5px);
+    }
+
+    .btn-3d {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #5e5d5e;
+      color: rgb(155, 155, 155);
+      border: none;
+      border-radius: 10px;
+      box-shadow: 3px 3px 6px #696969;
+      cursor: pointer;
+      transition: transform 0.1s ease;
+      display: block;
+      width: 100%;
+      text-align: center;
+      animation: fadeIn 1s ease 0.8s backwards;
+    }
+
+    .btn-3d:hover {
+      transform: translateY(-2px);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .sidebar::-webkit-scrollbar,
+    .saint-section::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .sidebar::-webkit-scrollbar-thumb,
+    .saint-section::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 3px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .sidebar, .saint-section {
+        width: 100%;
+        max-height: none;
+      }
+
+      .btn-3d {
+        font-size: 16px;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="chrome-text">𝚂𝙰𝙸𝙽𝚃</h1>
+  <div class="container">
+    <div class="sidebar">
+      <h2 class="chrome-text">♱ 𝚂𝙰𝙸𝙽𝚃 ♱</h2>
+      <ul>
+        <li style="--i:1">Saint Uno</li>
+        <li style="--i:2">Saint Dos</li>
+        <li style="--i:3">Saint Tres</li>
+        <li style="--i:4">Saint Quatro</li>
+        <li style="--i:5">1512 Saint Zoo</li>
+        <li style="--i:6">Saint Siete</li>
+        <li style="--i:7">1513 Saint Kairu</li>
+        <li style="--i:8">1533 Saint Nueve</li>
+        <li style="--i:9">Saint Ken</li>
+        <li style="--i:10">Saint JDOT</li>
+        <li style="--i:11">Saint Adi</li>
+        <li style="--i:12">Saint Aspect</li>
+        <li style="--i:13">Saint Carl</li>
+        <li style="--i:14">Saint Golem</li>
+        <li style="--i:15">Saint Gromx</li>
+        <li style="--i:16">1509 Saint Kael</li>
+        <li style="--i:17">kenzo</li>
+        <li style="--i:18">Saint Kise</li>
+        <li style="--i:19">Saint Kiyo</li>
+        <li style="--i:20">Saint ERZA</li>
+        <li style="--i:21">Saint Kruzi</li>
+        <li style="--i:22">Saint Nard</li>
+        <li style="--i:23">SAINT OF TRK</li>
+        <li style="--i:24">Saint Ren</li>
+        <li style="--i:25">Saint Shin</li>
+        <li style="--i:26">Syn</li>
+        <li style="--i:27">Saint Theo</li>
+        <li style="--i:28">Saint Uzi</li>
+        <li style="--i:29">Saint Van</li>
+        <li style="--i:30">Saint wrangler</li>
+        <li style="--i:31">Saint Yu</li>
+        <li style="--i:32">Saint Yuri</li>
+        <li style="--i:33">Saint pweow</li>
+        <li style="--i:34">SAINT RENEEE</li>
+        <li style="--i:35">Saint Kench</li>
+        <li style="--i:36">Saint Cozy</li>
+        <li style="--i:37">Saintcow</li>
+        <li style="--i:38">Saint Shínro</li>
+        <li style="--i:39">saint Trap</li>
+        <li style="--i:40">Saint Kenneth</li>
+        <li style="--i:41">Saint Ade</li>
+        <li style="--i:42">Saint Cozy</li>
+        <li style="--i:43">Saint D4athhitta</li>
+        <li style="--i:44">Saint 1511 Laurent</li>
+        <li style="--i:45">1548 Saint Ryū</li>
+        <li style="--i:46">Saint Kleb</li>
+        <li style="--i:47">͝ Saint Shi</li>
+        <li style="--i:48">Saint zak</li>
+        <li style="--i:49">Saint Kuro</li>
+        <li style="--i:50">Saint Jzz</li>
+        <li style="--i:51">Saint Enri</li>
+        <li style="--i:52">SAINT HAZE</li>
+        <li style="--i:53">Saint Leru</li>
+        <li style="--i:54">saint dwight</li>
+        <li style="--i:55">Saint C</li>
+        <li style="--i:56">͝ Saint wapols</li>
+        <li style="--i:57">͝ Saint sential</li>
+        <li style="--i:58">Saint Wertzsco</li>
+        <li style="--i:59">Saint Kayyy</li>
+        <li style="--i:60">Saint kio</li>
+        <li style="--i:61">Saint Aki</li>
+        <li style="--i:62">1524 Saint Nicolaze</li>
+        <li style="--i:63">Saint Kei</li>
+        <li style="--i:64">Ω Saint Fass</li>
+        <li style="--i:65">Saint Gabolds</li>
+        <li style="--i:66">Saint Taiz</li>
+        <li style="--i:67">Saint Aiden</li>
+        <li style="--i:68">Saint 12130</li>
+        <li style="--i:69">Saint Hex</li>
+        <li style="--i:70">Saint Russ</li>
+        <li style="--i:71">Saint Tris</li>
+        <li style="--i:72">Saint Rain</li>
+        <li style="--i:73">Kuina</li>
+        <li style="--i:74">1538 SAINT PROBINSYANO</li>
+        <li style="--i:75">Saint kyo</li>
+        <li style="--i:76">Saint Ponyo</li>
+        <li style="--i:77">Saint Jordan</li>
+        <li style="--i:78">1560 Saint PENI</li>
+        <li style="--i:79">Saint Yosi</li>
+        <li style="--i:80">Saint r1tzz</li>
+        <li style="--i:81">Saint Gi</li>
+        <li style="--i:82">Saint Euro</li>
+        <li style="--i:83">Saint Sev</li>
+        <li style="--i:84">Saint Seroquel</li>
+        <li style="--i:85">Saint CK</li>
+        <li style="--i:86">Saint Matthew</li>
+        <li style="--i:87">Saint Upin</li>
+        <li style="--i:88">Saint Xted</li>
+        <li style="--i:89">Saint flame</li>
+        <li style="--i:90">Saint Kielzy</li>
+        <li style="--i:91">Saint Cuervo</li>
+        <li style="--i:92">Saint Suffer</li>
+        <li style="--i:93">1532 Saint Roze</li>
+        <li style="--i:94">Saint Vain</li>
+        <li style="--i:95">Saint Bed</li>
+        <li style="--i:96">Saint Kry</li>
+        <li style="--i:97">Saint Avihs</li>
+        <li style="--i:98">Saint W1</li>
+        <li style="--i:99">Saint EXCE</li>
+        <li style="--i:100">Saint Cleo</li>
+        <li style="--i:101">Saint Eser</li>
+        <li style="--i:102">Saint Vox</li>
+        <li style="--i:103">Saint Kei</li>
+        <li style="--i:104">Saint Izian</li>
+        <li style="--i:105">Saint Ymer</li>
+        <li style="--i:106">Saint Dumudugo</li>
+        <li style="--i:107">Saint Yael</li>
+        <li style="--i:108">Saint Uno</li>
+        <li style="--i:109">Saint Grey</li>
+        <li style="--i:110">Saint Johnny</li>
+        <li style="--i:111">Saint YG Mizael</li>
+        <li style="--i:112">Saint Rui</li>
+      </ul>
+    </div>
+    <div class="sidebar">
+    <h2 class="chrome-text">♱ 𝚂𝙰𝙸𝙽𝚃 𝙷𝙾𝙻𝙳𝙴𝚁 ♱</h2>
+    <ul>
+      <li style="--i:1">Saint Kaechi</li>
+      <li style="--i:2">Saint Zone</li>
+      <li style="--i:3">1508 Saint Zuki</li>
+      <li style="--i:4">Saint PDOT</li>
+    </ul>
+  </div>
+
+  <div class="sidebar">
+    <h2 class="chrome-text">♱ 𝚅𝙴𝚂𝚃𝙰𝙻𝚂 ♱</h2>
+    <ul>
+      <li>Saint Bianca</li>
+      <li>Saint Jean</li>
+      <li>Saint 1500 Mistyyy</li>
+      <li>Saint Sx</li>
+      <li>Saint TTK</li>
+      <li>1502 Saint Ieve</li>
+      <li>Saint Sage</li>
+      <li>Saint Aeri</li>
+      <li>Saint Gwail</li>
+      <li>Saint Sombr</li>
+      <li>1541 Saint Azi</li>
+      <li>𖤝 Saint Chin</li>
+      <li>Saint Jia</li>
+      <li>Saint Aki</li>
+      <li>Saint Eun</li>
+      <li>Saint Mizeki</li>
+      <li>Saint Cie</li>
+      <li>ABG Krz</li>
+      <li>1522 Saint Suki</li>
+      <li>Saint Gigi</li>
+      <li>Saint Aki</li>
+      <li>ABG Krz</li>
+      <li>Saint Ash</li>
+      <li>1566 Saint Hikari</li>
+      <li>Saint Mixu</li>
+      <li>Saint Ziyan</li>
+      <li>1521 Saint Rz</li>
+      <li>Saint Liu</li>
+      <li>Saint ABG Liza Soberano</li>
+      <li>1515 Saint Marga</li>
+      <li>Saint ACED Akira</li>
+      <li>1571 Saint Nic</li>
+    </ul>
+  </div>
+
+    </ul>
+  </div>
+</div>
+
+
+<!-- BUTTONS: ABG and TRKHOME side-by-side -->
+<div style="display: flex; justify-content: center; gap: 20px; padding: 30px;">
+  <a href="index.html">
+    <button class="btn-3d" style="width: auto; padding: 10px 30px;">𝚃𝚁𝙺𝙷𝙾𝙼𝙴</button>
+  </a>
+  <a href="third.html">
+    <button class="btn-3d" style="width: auto; padding: 10px 30px;">𝙰𝙱𝙶</button>
+  </a>
+</div>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ABG - TRNCHKDS</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+      body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('background.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      color: white;
+      animation: fadeIn 1s ease;
+    }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: white;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes staggerFadeIn {
+      from { opacity: 0; transform: translateX(-10px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .chrome-text {
+      font-weight: bold;
+      color: #e0e0e0;
+      text-shadow: 0 0 5px #fff, 0 0 10px #ccc, 0 0 15px #aaa, 0 0 20px #888;
+      text-align: center;
+      margin: 20px 0;
+      animation: fadeIn 1s ease 0.2s backwards;
+      transition: transform 0.3s ease;
+    }
+
+    .chrome-text:hover {
+      transform: scale(1.05);
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .section {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      animation: fadeIn 1s ease 0.4s backwards;
+      overflow: hidden;
+      min-width: 260px;
+      flex-grow: 1;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .member {
+      margin-bottom: 6px;
+      font-size: 15px;
+      padding-left: 5px;
+      border-left: 2px solid #888;
+      opacity: 0;
+      animation: staggerFadeIn 0.3s ease forwards;
+    }
+
+    .saint-button {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 25px;
+      background: linear-gradient(to right, #070707, #020202);
+      border: none;
+      border-radius: 25px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(241, 241, 241, 0.6);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .saint-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 20, 147, 0.9);
+    }
+
+    .babygirls {
+      max-height: 400px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #242323 #111;
+    }
+
+    .babygirls::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .babygirls::-webkit-scrollbar-track {
+      background: #111;
+    }
+
+    .babygirls::-webkit-scrollbar-thumb {
+      background-color: #ff69b4;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="chrome-text">𝙰𝙱𝙶</h1>
+  <div class="container">
+    <div class="section duchess">
+      <h2 class="chrome-text">𝙳𝚄𝙲𝙷𝙴𝚂𝚂</h2>
+      <div class="member">MIJU RUBY JANE</div>
+      <div class="member">I EAT ABG'S</div>
+      <div class="member">FIA LAPLAP ABG</div>
+    </div>
+
+    <div class="section babygirls">
+      <h2 class="chrome-text">𝙱𝙰𝙱𝚈𝙶𝙸𝚁𝙻𝚂</h2>
+      <div id="babygirls-list"></div>
+    </div>
+
+    <div class="section vixen">
+      <h2 class="chrome-text">𝚅𝙸𝚇𝙴𝙽</h2>
+      <div class="member">1551 ABG RAY</div>
+      <div class="member">1513 ABG SOSA</div>
+      <div class="member">1525 ABG DIOR</div>
+    </div>
+  </div>
+
+  <a href="second.html">
+    <button class="saint-button">𝚂𝙰𝙸𝙽𝚃</button>
+  </a>
+
+  <script>
+    const babygirls = [
+      "Saint ABG Jazzy", "ABG konyo", "ABG Nihaoma", "ABG RI", "ABG KOKO", "ABG IZY",
+      "ABG kyn", "ABG eunis", "ABG seia", "ABG SEI", "1550 ABG yato", "ABG anzu",
+      "ABG Abraham", "ABG 宁艺卓", "ABG ria", "ABG marlboro red", "ABG ACED ice",
+      "ABG michelle", "ABG choc", "ABG dwight ramos", "ABG >,<", "ABG Tetsuk",
+      "YG ABG eya", "YG ABG lisa", "ABG supershai morena na yearner", "BG celxtiane",
+      "ABG YANS", "ABG ame", "Saint ABG Krz", "saint abg liza soberano", "ABG Jasm",
+      "ABG.Gioio", "ABG SOL", "ABG sais", "YG ABG lychii", "ABG ANZIEYA"
+    ];
+
+    const listContainer = document.getElementById('babygirls-list');
+    babygirls.forEach((name, index) => {
+      const div = document.createElement('div');
+      div.className = 'member';
+      div.style.animationDelay = `${index * 0.03}s`;
+      div.textContent = name;
+      listContainer.appendChild(div);
+    });
+  </script>
+</body>
+</html>
