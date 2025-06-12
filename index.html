@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRNCHKDS.COM</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      text-align: center;
+      background-color: #000;
+      color: white;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .spacer {
+      height: 50px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .image-box {
+      border: 2px solid white;
+      padding: 10px;
+      border-radius: 15px;
+      overflow: hidden;
+      max-width: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    .image-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #ffffff33;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    #music-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 1000;
+      backdrop-filter: blur(5px);
+    }
+
+    #music-toggle:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    /* RGB TEXT ANIMATION */
+    @keyframes rgb-text {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .rgb-text {
+      font-size: 24px;
+      font-weight: bold;
+      background: linear-gradient(270deg, rgb(20, 20, 20), rgb(255, 254, 251), rgb(0, 0, 0), rgb(239, 241, 239), rgb(2, 2, 2), rgb(247, 247, 248), rgb(0, 0, 0));
+      background-size: 400% 400%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      animation: rgb-text 4s ease infinite;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.2),
+        0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-3d {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 12px;
+      font-size: 18px;
+      margin: 20px auto;
+      cursor: pointer;
+      box-shadow: 0 5px 0 #333;
+      transition: all 0.2s ease;
+    }
+
+    .btn-3d:hover {
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1);
+    }
+
+    /* Discord floating box */
+    .discord-container {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-right: 10px;
+    }
+
+    #discord-toggle {
+      margin-bottom: 10px;
+    }
+
+    .discord-box {
+      display: none;
+      animation: fadeIn 0.5s ease forwards;
+      opacity: 0;
+    }
+
+    .discord-box.show {
+      display: block;
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background music -->
+  <audio id="bg-music" autoplay loop>
+    <source src="audio/playboicarti.mp4" type="audio/mpeg">
+  </audio>
+
+  <!-- Music toggle button -->
+  <button id="music-toggle">🔊 Music On</button>
+
+  <!-- Spacer -->
+  <div class="spacer"></div>
+
+  <!-- Image gallery -->
+  <div class="gallery">
+    <a href="second.html" class="image-box">
+      <img src="img/saint.gif" alt="saint">
+    </a>
+    <a href="third.html" class="image-box">
+      <img src="img/abg.jpg" alt="abg">
+    </a>
+    <a href="fifth.html" class="image-box">
+      <img src="img/aced1.jpg" alt="babygirls">
+    </a>
+    <a href="fourth.html" class="image-box">
+      <img src="img/hellokitty.jpg" alt="duchess">
+    </a>
+  </div>
+
+  <!-- Spacer -->
+  <div class="spacer"></div>
+
+  <!-- Discord link text -->
+  <h2 class="rgb-text">DISCORD.GG/TRNCHKDS</h2>
+
+  <!-- Discord floating section -->
+  <div class="discord-container">
+    <button id="discord-toggle" class="btn-3d">💬 Show Discord</button>
+    <div id="discord-box" class="discord-box">
+      <iframe src="https://discord.com/widget?id=1113385939436314664&theme=dark"
+        width="250" height="700" allowtransparency="true" frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- JS script for music + discord toggle -->
+  <script>
+    const bgMusic = document.getElementById("bg-music");
+    const musicToggle = document.getElementById("music-toggle");
+
+    window.addEventListener('load', () => {
+      const playPromise = bgMusic.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          musicToggle.innerText = "🔇 Music Off";
+        });
+      }
+    });
+
+    musicToggle.addEventListener("click", () => {
+      if (bgMusic.paused) {
+        bgMusic.play();
+        musicToggle.innerText = "🔊 Music On";
+      } else {
+        bgMusic.pause();
+        musicToggle.innerText = "🔇 Music Off";
+      }
+    });
+
+    // Discord toggle
+    const discordToggle = document.getElementById("discord-toggle");
+    const discordBox = document.getElementById("discord-box");
+
+    discordToggle.addEventListener("click", () => {
+      discordBox.classList.toggle("show");
+      discordToggle.innerText = discordBox.classList.contains("show")
+        ? "Hide Discord"
+        : "💬 Show Discord";
+    });
+  </script>
+
+</body>
+
+</html>
