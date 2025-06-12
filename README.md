@@ -1,0 +1,1 @@
+This website is still something I'm practicing with, especially for adding many features. I just made this website for a Discord server and their roster. I still have a lot of features to add. By the way, I used AI here for assistance.
