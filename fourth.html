@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>1500</title>
+  <link rel="icon" type="image/png" href="black.png" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('black.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      color: white;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes staggerFadeIn {
+      from { opacity: 0; transform: translateX(-10px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .chrome-text {
+      font-weight: bold;
+      background: linear-gradient(270deg, #fcfbfb, #444141, #535252);
+      background-size: 600% 600%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      text-shadow:
+        0 0 5px #f8f0f0,
+        0 0 10px #eeeeee,
+        0 0 15px #030303,
+        0 0 20px #080808;
+      text-align: center;
+      margin: 20px 0;
+      animation: fadeIn 1s ease 0.2s backwards, chromeAnimation 4s ease infinite;
+      transition: transform 0.3s ease;
+    }
+
+    .chrome-text:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes chromeAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .sidebar {
+      width: 300px;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 1s ease 0.6s backwards;
+    }
+
+    .sidebar:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+    }
+
+    .scroll-box {
+      max-height: 250px;
+      overflow-y: auto;
+      padding-right: 10px;
+    }
+
+    .scroll-box::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .scroll-box::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 3px;
+    }
+
+    h1.chrome-text {
+      font-size: 2.5em;
+    }
+
+    h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+
+    li.chrome-text {
+      margin-bottom: 5px;
+      font-size: 1.2em;
+      animation: staggerFadeIn 0.4s ease forwards;
+      animation-delay: 0.2s;
+    }
+
+    li:hover {
+      color: #0ff;
+      transform: translateX(5px);
+    }
+
+    .btn-3d {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #5e5d5e;
+      color: rgb(155, 155, 155);
+      border: none;
+      border-radius: 10px;
+      box-shadow: 3px 3px 6px #696969;
+      cursor: pointer;
+      transition: transform 0.1s ease;
+      display: block;
+      width: 100%;
+      text-align: center;
+      animation: fadeIn 1s ease 0.8s backwards;
+    }
+
+    .btn-3d:hover {
+      transform: translateY(-2px);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn-3d {
+        font-size: 16px;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="chrome-text">𝟏𝟓𝟎𝟎</h1>
+
+  <div class="container">
+    <!-- BIG 1500 Section -->
+    <div class="sidebar">
+      <h2 class="chrome-text">𝙱𝙸𝙶 𝟏𝟓𝟎𝟎 (𝙷𝙾𝙻𝙳𝙴𝚁𝚂)</h2>
+      <ul>
+         <li class="chrome-text">LUI</li>
+         <li class="chrome-text">IEVE</li>
+         <li class="chrome-text">JZAI</li>
+         <li class="chrome-text">AEZUI</li>
+      </ul>
+    </div>
+
+    <!-- NOTORIOUS GOONS Section -->
+    <div class="sidebar">
+      <h2 class="chrome-text">𝙽𝙾𝚃𝙾𝚁𝙸𝙾𝚄𝚂 (𝙶𝙾𝙾𝙽𝚂)</h2>
+      <div class="scroll-box">
+        <ul>
+          <li class="chrome-text">1506 Skwed</li>
+          <li class="chrome-text">1508</li>
+          <li class="chrome-text">1509 resu (class president btw.)</li>
+          <li class="chrome-text">1510t kindestinasia</li>
+          <li class="chrome-text">1511</li>
+          <li class="chrome-text">1512 chiyo</li>
+          <li class="chrome-text">1513 Grey</li>
+          <li class="chrome-text">LOVE SEX DREAMs LOVE SEX DREAMs aking dopamine</li>
+          <li class="chrome-text">1515 xia</li>
+          <li class="chrome-text">1516 yein</li>
+          <li class="chrome-text">1517 Guided</li>
+          <li class="chrome-text">1518 seya</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div style="display: flex; justify-content: center; gap: 20px; padding: 30px;">
+    <a href="index.html">
+      <button class="btn-3d">𝚃𝚁𝙺𝙷𝙾𝙼𝙴</button>
+    </a>
+    <a href="fifth.html">
+      <button class="btn-3d">𝙰𝙲𝙴𝙳</button>
+    </a>
+  </div>
+</body>
+</html>
